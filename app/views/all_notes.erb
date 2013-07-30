@@ -1,0 +1,5 @@
+
+<h1>ALL NOTES</h1>
+<% @notes.each do |note| %> 
+<p><a href="/note/<%= note.id %>"><%= note.title %> </a> </p>
+<% end %> 

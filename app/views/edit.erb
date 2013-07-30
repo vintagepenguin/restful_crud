@@ -1,0 +1,10 @@
+<form action='/edit/<%= @note.id %>' method='POST'>
+<input type="text"     placeholder='User Name'   value=<%= @note.try(:user_name)  %>    name="user[user_name]"><br>
+<input type="text"      placeholder='Note Title' value=<%= @note.try(:title)      %>    name="user[title]"><br>
+<input type="textfield" placeholder='Content'    value=<%= @note.try(:content)    %> 		name="user[content]"><br>
+<input type="submit"  value="Submit Changes">
+
+</form>
+
+
+
